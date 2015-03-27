@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cool Website</title>
+
+    <script src="../jquery-1.11.2.js"></script>
+    <script src="./tabs.js"></script>
+    <link href="./tabs.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+  </head>
+
+  <body>
+    <ul class='tabs' data-content-tabs='#content-tabs'>
+      <li><a href="#OES">Old English Sheepdog</a></li>
+      <li><a href="#CHH">Chihuahua</a></li>
+      <li><a href="#shihtzu">Shih Tzu</a></li>
+    </ul>
+
+    <div id='content-tabs'>
+      <div class="tab-pane" id="OES">
+        <p>
+          The Old English Sheepdog (OES) is a sweet-tempered family pet.
+          They are affectionate and devoted to their family and love to spend
+          time with their people. They are adaptable, easygoing, fun-loving,
+          and robust. They can be a bit clownish and OES owners claim they
+          have a great sense of humor. They definitely want to be the center
+          of attention and if they don't get enough attention and affection
+          from their humans, this can negatively affect their temperament and
+          emotional wellbeing. These are large, boisterous dogs who can be a
+          bit stubborn, so it is important to start with basic obedience
+          training early.
+        </p>
+      </div>
+      <div class="tab-pane" id="CHH">
+        <p>
+          The Chihuahua is a confident, feisty, courageous, and loyal dog.
+          He is loving, gentle and sweet-natured with his family. He likes to
+          play games, and needs lots of attention, affection and petting. He
+          usually becomes very attached to one member of the family in
+          particular, and if you are his chosen one he will follow you
+          everywhere you go.
+        </p>
+      </div>
+      <div class="tab-pane" id="shihtzu">
+        <p>
+          The Shih Tzu is a loving, friendly, gentle, playful, loyal and
+          happy dog. He loves people and bonds with the entire family. He
+          needs to give and receive a great deal of love and affection, and
+          is not the kind of dog who can be left alone inside the house for
+          many hours at a time, or kept outside in a yard. He is an indoor
+          dog who needs to be petted, held, cuddled and pampered, and he is
+          happiest napping on the couch with you for hours.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+  </body>
+</html>
